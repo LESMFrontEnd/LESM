@@ -992,6 +992,7 @@ let status=[
                   animationData={animationData}
                   loop={true}
                   autoplay={true}
+                  className="lottie1"
                 />
               </div>
               <p className="updatedStatus">
