@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./filter.css";
 
 function Filter() {
   const optionsList = ["Today", "Last 7 Days", "Last 30 Days", "Last 60 Days"];
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Select your option");
+  const [selectedOption, setSelectedOption] = useState("Select Date");
 
   const toggleOptions = () => {
     setIsOpen(!isOpen);

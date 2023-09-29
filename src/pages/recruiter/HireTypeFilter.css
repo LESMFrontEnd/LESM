@@ -12,13 +12,13 @@ body {
     background: #E3F2FD;
 }
 
-.select-menu {
+.hireType-select-menu {
     width: 226px;
     margin: 40px 10px 10px 10px;
     position: relative;
 }
 
-.select-menu .select-btn {
+.hireType-select-menu .hireType-select-btn {
     display: flex;
     height: 28px;
     background: #fff;
@@ -32,22 +32,22 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.select-btn i {
+.hireType-select-btn i {
     font-size: 25px;
     transition: 0.3s;
 }
 
-.select-menu.active .select-btn i {
+.hireType-select-menu.active .hireType-select-btn i {
     transform: rotate(-180deg);
 }
 
-.select-menu .options {
+.hireType-select-menu .hireType-options {
     position: absolute;
     width: 227px;
     background-color: #fff;
     padding: 0px;
-    margin-top: 10px;
-    height: 133px;
+    margin-top: 11px;
+    height: 73px;
     border-radius: 8px;
     background: #fff;
     border: 1px solid #ccc;
@@ -56,11 +56,11 @@ body {
     z-index: 1;
 }
 
-.select-menu.active .options {
+.hireType-select-menu.active .hireType-options {
     display: block;
 }
 
-.options .option {
+.hireType-options .hireType-option {
     display: flex;
     height: 30px;
     cursor: pointer;
@@ -70,16 +70,16 @@ body {
     background: #fff;
 }
 
-.options .option:hover {
+.hireType-options .hireType-option:hover {
     background: #F2F2F2;
 }
 
-.option i {
+.hireType-option i {
     font-size: 25px;
     margin-right: 12px;
 }
 
-.option .option-text {
+.hireType-option .hireType-option-text {
     font-size: 14px;
     color: #333;
     margin: 10px;

@@ -12,6 +12,8 @@ import bgImage from "../../images/Rectangle 62.png"
 import "./AllJobs.css"
 import Filter from "./Filter";
 import JobRoleFilter from "./JobRoleFilter";
+import HireTypeFilter from "./HireTypeFilter";
+import JobsPost from "./JobsPost";
 
 function AllJobs() {
 
@@ -49,26 +51,21 @@ function AllJobs() {
               <Filter className="dataPostFilter"></Filter>
             </div>
             <div className="divider"></div>
-            
+
             <div className="fRow3">
-            <label>Job type</label>
-           <JobRoleFilter></JobRoleFilter>
+              <label>Job type</label>
+              <JobRoleFilter></JobRoleFilter>
             </div>
+            <div className="divider"></div>
             <div className="fRow4">
-
+              <label>Hire type</label>
+              <HireTypeFilter></HireTypeFilter>
             </div>
-            <div className="fRow5">
-
-            </div>
-            <div className="fRow6">
-
-            </div>
-
-
           </div>
-
         </div>
+
         <div className="jobPost">
+         <JobsPost></JobsPost>
 
         </div>
 

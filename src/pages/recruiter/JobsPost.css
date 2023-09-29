@@ -1,0 +1,175 @@
+.jobsPostCard {
+    display: grid;
+    grid-template-columns: 3f 1f 2f;
+    grid-template-rows: 80px 300px auto;
+    grid-template-areas: "jobTitle jobTitle jobTitle"
+        "jobDescription budget taggedEmployees"
+        "ticketTag ticketTag ticketTag";
+    margin: 10px 50px 10px 10px;
+}
+
+.jobTitle {
+    grid-area: jobTitle;
+    background: transparent linear-gradient(278deg, #07578D 0%, #7F4B26 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #CFCFD6;
+    border-radius: 5px 5px 0px 0px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.jobTitle span:nth-child(1) {
+    text-align: left;
+    font: normal normal medium 24px/35px Poppins;
+    letter-spacing: 0px;
+
+}
+
+.jobTitle span:nth-child(1) {
+    text-align: left;
+    font: normal normal normal 20px/30px Poppins;
+    letter-spacing: 0px;
+}
+
+.jobTitle label {
+    text-align: left;
+    font: normal normal medium 20px/30px Poppins;
+    letter-spacing: 0px;
+}
+
+.jobTitle button {
+    width: 157px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+
+}
+
+.jobTitle button span {
+    font-size: 12px;
+    width: 141px;
+    height: 21px;
+    background: transparent url('') 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+
+.jobDescription {
+    position: relative;
+    grid-area: jobDescription;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    opacity: 1;
+    width: 138%;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+}
+
+.jobDescription-content {
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #E8E5E8;
+    border: 0.5px solid #E8E5E8;
+    border-radius: 5px;
+    opacity: 1;
+    height: 93%;
+    width: 95%;
+    margin: 10px 10px 0px 10px;
+    padding: 10px 3px 0px 5px;
+
+}
+
+.jobDescription-content span {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    font: normal normal medium 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+    opacity: 1;
+
+}
+
+.description-scroll-container {
+    position: absolute;
+    height: 80%;
+    width: 95%;
+    overflow: auto;
+    margin: 10px 0px 10px 8px;
+    display: flex;
+
+
+}
+
+.description-scroll-container {
+
+    flex: 1;
+    display: flex;
+    /* Ensure the cards are displayed in a row */
+    flex-direction: column;
+    /* Display the cards in a column layout */
+    overflow: hidden;
+    overflow-y: auto;
+    /* Enable vertical scrolling for the profile cards */
+
+}
+
+.description-scroll-container::-webkit-scrollbar {
+    top: 213px;
+    left: 461px;
+    width: 8px;
+    height: 88px;
+    border-radius: 100px;
+    opacity: 1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #707070;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9ba9e8;
+}
+
+.description {
+    padding: 10px;
+    /* Optional padding for content */
+}
+
+.description p {
+    text-align: left;
+    font: normal normal normal 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+}
+
+.budget {
+    grid-area: budget;
+    background-color: rgb(251, 255, 0);
+    width: 100%;
+}
+
+.taggedEmployees {
+    grid-area: taggedEmployees;
+    background-color: rgb(141, 15, 74);
+    width: 100%;
+}
+
+.ticketTag {
+    grid-area: ticketTag;
+    background-color: rgb(214, 183, 197);
+}

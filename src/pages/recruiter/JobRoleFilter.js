@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-
+import "./JobRoleFilter.css"
 function JobRoleFilter() {
-    const optionsList = ["Java developer", ".Net Developer", "Devops Engineer", "React Js Developer"];
+    const optionsList = ["Verizon", "Infosys", "Amazon", "Mercedes"];
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState("Select your option");
+    const [selectedOption, setSelectedOption] = useState("Select client");
 
     const toggleOptions = () => {
         setIsOpen(!isOpen);
@@ -15,20 +15,20 @@ function JobRoleFilter() {
         setIsOpen(false);
     };
     return (
-        <div className={`select-menu ${isOpen ? "active" : ""}`}>
-            <div className="select-btn" onClick={toggleOptions}>
-                <span className="sBtn-text">{selectedOption}</span>
+        <div className={`Job-select-menu ${isOpen ? "active" : ""}`}>
+            <div className="Job-select-btn" onClick={toggleOptions}>
+                <span className="Job-sBtn-text">{selectedOption}</span>
                 <i className="bx bx-chevron-down"></i>
             </div>
 
-            <ul className="options">
+            <ul className="Job-options">
                 {optionsList.map((option, index) => (
                     <li
                         key={index}
-                        className="option"
+                        className="Job-option"
                         onClick={() => handleOptionClick(option)}
                     >
-                        <span className="option-text">{option}</span>
+                        <span className="Job-option-text">{option}</span>
                     </li>
                 ))}
             </ul>

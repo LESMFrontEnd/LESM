@@ -12,13 +12,13 @@ body {
     background: #E3F2FD;
 }
 
-.select-menu {
-    width: 240px;
+.Job-select-menu {
+    width: 226px;
     margin: 40px 10px 10px 10px !important;
     position: relative;
 }
 
-.select-menu .select-btn {
+.Job-select-menu .Job-select-btn {
     display: flex;
     height: 28px;
     background: #fff;
@@ -32,18 +32,18 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.select-btn i {
+.Job-select-btn i {
     font-size: 25px;
     transition: 0.3s;
 }
 
-.select-menu.active .select-btn i {
+.Job-select-menu.active .Job-select-btn i {
     transform: rotate(-180deg);
 }
 
-.select-menu .options {
+.Job-select-menu .Job-options {
     position: absolute;
-    width: 239px;
+    width: 227px;
     background-color: #fff;
     padding: 0px;
     margin-top: 10px;
@@ -53,13 +53,14 @@ body {
     border: 1px solid #ccc;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     display: none;
+    z-index: 1;
 }
 
-.select-menu.active .options {
+.Job-select-menu.active .Job-options {
     display: block;
 }
 
-.options .option {
+.Job-options .Job-option {
     display: flex;
     height: 30px;
     cursor: pointer;
@@ -69,16 +70,16 @@ body {
     background: #fff;
 }
 
-.options .option:hover {
+.Job-options .Job-option:hover {
     background: #F2F2F2;
 }
 
-.option i {
+.Job-option i {
     font-size: 25px;
     margin-right: 12px;
 }
 
-.option .option-text {
+.Job-option .Job-option-text {
     font-size: 14px;
     color: #333;
     margin: 10px;
