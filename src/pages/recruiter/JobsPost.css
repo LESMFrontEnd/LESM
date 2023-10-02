@@ -1,11 +1,15 @@
 .jobsPostCard {
     display: grid;
-    grid-template-columns: 3f 1f 2f;
-    grid-template-rows: 80px 300px auto;
+    grid-template-columns: 3f 1.5f 2f;
+    grid-template-rows: 80px 320px auto;
     grid-template-areas: "jobTitle jobTitle jobTitle"
         "jobDescription budget taggedEmployees"
         "ticketTag ticketTag ticketTag";
     margin: 10px 50px 10px 10px;
+    box-shadow: 0px 1px 6px #E8E5E8;
+border: 0.5px solid #CFCFD6;
+border-radius: 5px;
+opacity: 1;
 }
 
 .jobTitle {
@@ -23,21 +27,27 @@
 
 .jobTitle span:nth-child(1) {
     text-align: left;
-    font: normal normal medium 24px/35px Poppins;
+  font-size: 19px;
     letter-spacing: 0px;
 
 }
-
 .jobTitle span:nth-child(1) {
     text-align: left;
-    font: normal normal normal 20px/30px Poppins;
+  font-size: 19px;
     letter-spacing: 0px;
+
 }
+
+
+
 
 .jobTitle label {
     text-align: left;
-    font: normal normal medium 20px/30px Poppins;
+    margin-right: 10px;
+   
     letter-spacing: 0px;
+    padding-right: -10px;
+    font-size: 16px;
 }
 
 .jobTitle button {
@@ -45,7 +55,8 @@
     height: 40px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
-
+    margin-left: -95px;
+    font-size: 14px;
 }
 
 .jobTitle button span {
@@ -61,30 +72,29 @@
     position: relative;
     grid-area: jobDescription;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-
     opacity: 1;
-    width: 138%;
+    width: 173%;
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
+    z-index: 1
 }
 
-.jobDescription-content {
+.jobDescription-card {
     position: absolute;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 6px #E8E5E8;
     border: 0.5px solid #E8E5E8;
     border-radius: 5px;
     opacity: 1;
-    height: 93%;
+    height: 95%;
     width: 95%;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0px 25px;
     padding: 10px 3px 0px 5px;
 
 }
 
-.jobDescription-content span {
+.jobDescription-card span {
     margin-top: 10px;
     margin-left: 10px;
     text-align: left;
@@ -132,6 +142,7 @@
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 5px;
+    height: 90%;
 }
 
 /* Handle */
@@ -159,17 +170,241 @@
 
 .budget {
     grid-area: budget;
-    background-color: rgb(251, 255, 0);
-    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 153%;
+    position: relative;
+    justify-self: self-start;
+    /* Remove the fixed width */
+}
+
+.budgetCard {
+    position: absolute;
+    height: 95%;
+    width: 50%;
+    margin: 11px 10px 10px 155px;
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 0.5px solid #E8E5E8;
+    border-radius: 5px;
+    text-align: left;
+    padding: 26px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.budgerCardRow1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.budgerCardRow2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.budgerCardRow3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.budgetCard-divider {
+    border-bottom: 1px solid #ccc;
+    margin-left: -1px;
+    width: 105%;
+    margin-top: 10px;
+}
+
+.budgerCardRow1 .dateStatus {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+    opacity: 1;
+}
+
+.budgerCardRow1 .date {
+    font: normal normal normal 12px/25px Poppins;
+    letter-spacing: 0px;
+    color: #717177;
+    opacity: 1;
+}
+
+.budgerCardRow2 .dateStatus {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+    opacity: 1;
+}
+
+.budgerCardRow2 .date {
+    font: normal normal normal 12px/25px Poppins;
+    letter-spacing: 0px;
+    color: #717177;
+    opacity: 1;
+}
+
+.budgerCardRow3 h4 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+    opacity: 1;
+}
+
+.budgerCardRow3 span {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #06511D;
+    opacity: 1;
 }
 
 .taggedEmployees {
     grid-area: taggedEmployees;
-    background-color: rgb(141, 15, 74);
-    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 82%;
+    text-align: center;
+    justify-self: end;
+}
+
+.taggedEmployees-card {
+    height: 95%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 0.5px solid #E8E5E8;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 10px 10px 10px 10px;
+}
+
+.taggedEmployees-card h6 {
+    margin-top: 8px;
+    font: normal normal 600 16px/27px Poppins;
+    color: #1492E6;
+    opacity: 1;
+}
+
+.taggedEmpRow {
+    display: flex;
+    justify-content: space-around;
+    font: normal normal 600 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+    opacity: 1;
+
+}
+
+.taggdeEmp-divider {
+    border-bottom: 1px solid #ccc;
+    margin-left: 30px;
+    width: 90%;
+    margin-top: 10px;
+
+}
+
+.taggedEmployeesList div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    text-align: left;
+}
+
+.listRow .name {
+
+    width: 50%;
+    text-overflow: ellipsis;
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #A24FA2;
+    opacity: 1;
+    margin-left: 69px;
+}
+
+.listRow .id {
+
+    width: 50%;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 12px;
+    font: normal normal medium 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #A24FA2;
+    opacity: 1;
+    opacity: 1;
+}
+
+.taggedEmployees-scroll-container {
+    max-height: 200px;
+    /* Adjust the maximum height as needed */
+    overflow-y: auto;
+}
+
+.taggedEmployees-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.taggedEmployees-scroll-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+.taggedEmployees-scroll-container::-webkit-scrollbar-thumb {
+    background: #707070;
+    border-radius: 5px;
+}
+
+.taggedEmployees-scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #1492E6;
+
 }
 
 .ticketTag {
     grid-area: ticketTag;
-    background-color: rgb(214, 183, 197);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  
+border-radius: 5px;
+}
+
+.ticketTag .ticketNumber h6 {
+    text-align: left;
+    font: normal normal 600 14px/25px Poppins;
+    letter-spacing: 0px;
+    color: #1492E6;
+    opacity: 1;
+}
+
+.ticketTag .ticketNumber span {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #0C0C0F;
+    opacity: 1;
+}
+
+.profileButtons {
+    width: 113px;
+    height: 27px;
+    border: 1px solid #1492E6;
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #1492E6;
+    opacity: 1;
+}
+
+.profileButtons span {
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #1492E6;
+    opacity: 1;
 }

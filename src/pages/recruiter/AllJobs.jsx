@@ -65,7 +65,15 @@ function AllJobs() {
         </div>
 
         <div className="jobPost">
-         <JobsPost></JobsPost>
+
+          <div className="jobsPostCard-scroll-container">
+            <JobsPost></JobsPost>
+            <JobsPost></JobsPost>
+            <JobsPost></JobsPost><JobsPost></JobsPost>
+            
+
+          </div>
+
 
         </div>
 
