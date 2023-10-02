@@ -20,6 +20,7 @@ function JobsPost() {
                         <div className="jobDescription">
                             <div className="jobDescription-card">
                                 <span>Job Descriptions :</span>
+                                <div className="description_divider"></div>
                                 <div class="description-scroll-container">
                                     <div class="description">
                                         <p>Java developer roles will vary greatly depending on companies and job positions. Here are some typical roles and responsibilities of java developers:</p>
